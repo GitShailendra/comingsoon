@@ -1,6 +1,7 @@
 // src/ComingSoon.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
+
 import './App.css';
 import logo from '../public/Artboard_1-1.png';
 import coder from '../public/coder.png'
@@ -17,7 +18,7 @@ const ComingSoon = () => {
     setIsError(false); // Reset error state
 
     try {
-      const res = await axios.post('http://localhost:5000/api/subscribe', { email });
+      const res = await axios.post('https://comingsoon-w4wg.onrender.com/api/subscribe', { email });
       setStatusMessage(res.data.message);
       setEmail(''); // Clear email field after successful submission
     } catch (err) {
