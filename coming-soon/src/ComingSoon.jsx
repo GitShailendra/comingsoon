@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 import './App.css';
-import logo from '../public/Artboard_1-1.png';
-import coder from '../public/coder.png'
+import logo from '/Artboard_1-1.png';
+import coder from '/coder.png'
 const ComingSoon = () => {
   const [progress, setProgress] = useState(70); // Set progress value here
   const [email, setEmail] = useState('');
@@ -34,13 +34,13 @@ const ComingSoon = () => {
         <img className='logo' src={logo} alt="" />
         <ul>
           <li>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i className="fa-brands fa-linkedin"></i></a>
           </li>
           <li>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i className="fa-brands fa-instagram"></i></a>
           </li>
           <li>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i className="fa-brands fa-x-twitter"></i></a>
           </li>
          
         </ul>
