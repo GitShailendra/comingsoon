@@ -3,3 +3,17 @@ from = "/*"
 to = "/index.html"
 status = 200
 force = true
+[[headers]]
+for = "/*"
+[headers.values]
+Content-Type = "text/html; charset=UTF-8"
+
+[[headers]]
+for = "/static/*"
+[headers.values]
+Content-Type = "application/javascript"
+
+[[headers]]
+for = "/styles/*"
+[headers.values]
+Content-Type = "text/css"
